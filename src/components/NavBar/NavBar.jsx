@@ -1,16 +1,24 @@
 import './navbar.css'
 import CartWidget from "../CartWidget/CartWidget"
+import logo from "./assets/logo.png"
+import { NavLink } from 'react-router-dom'
 
 function NavBar() {
     return (
         <nav>
-            <h1 className="text-center font-bold text-3xl">G-Byte</h1>
-            <ul className="flex place-content-evenly max-w-4xl p-2 mx-auto mt-8">
-                <li className='font-bold text-red-700'><button>Motherboards</button></li>
-                <li className='font-bold text-red-700'><button>Procesadores</button></li>
-                <li className='font-bold text-red-700'><button>Placas de Video</button></li>
-                <CartWidget/>
+            <ul className="nav-menu">
+                <NavLink to='/'>
+                    <div className='logoBrand'>
+                        <a href=""><img src={logo} className='logo' /></a>
+                        <h1 className="brand">G-Byte</h1>
+                    </div>
+                </NavLink>
+                <li className=''><NavLink to="/categoria/Motherboards">Motherboards</NavLink></li>
+                <li className=''><NavLink to="/categoria/Procesadores">Procesadores</NavLink></li>
+                <li className=''><NavLink to="/categoria/Placas_de_Video">Placas de Video</NavLink></li>
+                <CartWidget />
             </ul>
+            <hr />
         </nav>
     )
 }

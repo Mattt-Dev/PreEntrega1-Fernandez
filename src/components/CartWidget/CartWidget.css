@@ -1,0 +1,15 @@
+.carrito{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.carritoImagen{
+    width: 32px;
+    margin-right: 12px;
+}
+
+.cantidad{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
