@@ -14,11 +14,18 @@
   cursor: pointer;
 }
 
+.item-card:hover .item-card_header > h2{
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  color: white;
+}
+
 .item-card_header{
   background-color: rgba(0,230,159,255);
   font-size: large;
   padding-bottom: 12px;
 }
+
 
 .item-card_header h2{
   padding: 16px 2px 0px;

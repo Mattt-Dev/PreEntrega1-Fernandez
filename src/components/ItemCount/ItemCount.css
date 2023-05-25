@@ -1,0 +1,36 @@
+.itemCount-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    max-width: 240px;
+    border-radius: 15px;    
+    margin-top: 24px;
+    
+}
+
+.itemCount-controlador{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+
+.itemCount-controlador > button{
+    font-size: 18;
+}
+
+.btn-quitar{
+    background-color: red;
+    min-width: 24px;
+    border-radius: 12px;
+}
+
+.btn-agregar{
+    background-color: green;
+    min-width: 24px;
+    border-radius: 12px;
+}
+
+.btn-add{
+    margin-top: 10px;
+}

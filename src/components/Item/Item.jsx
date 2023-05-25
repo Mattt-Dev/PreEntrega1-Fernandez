@@ -24,18 +24,18 @@ function hayStock(stock) {
 
 export default function Item({ nombre, imagen, precio, categoria, id, stock }) {
     return (
-        <Link to={`/product/${id}}`}>
-            <div className="item-card">
-                <div className="item-card_header">
-                    <h2>{nombre}</h2>
-                    <small>{categoria}</small>
+        <Link to={`/producto/${id}`}>
+                <div className="item-card">
+                    <div className="item-card_header">
+                        <h2>{nombre}</h2>
+                        <small>{categoria}</small>
+                    </div>
+                    <div className="item-card_img">
+                        <img src={imagen} alt={nombre} />
+                    </div>
+                    <CardDescription precio={precio} />
+                    <div className="item-card_stock">{hayStock(stock)}</div>
                 </div>
-                <div className="item-card_img">
-                    <img src={imagen} alt={nombre} />
-                </div>
-                <CardDescription precio={precio} />
-                <div className="item-card_stock">{hayStock(stock)}</div>
-            </div>
         </Link>
     )
 }

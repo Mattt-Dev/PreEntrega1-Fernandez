@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import productos from "../../data/productos";
+import "./ItemListContainer.css";
 
 function getData() {
     return new Promise((resolve) => {
@@ -19,7 +20,7 @@ function ItemListContainer() {
     useEffect(() => {
         getData().then((respuesta) => {
             if (categoryid) {
-                const filtrarProductos = respuesta.filter((item) => item.category === categoryid);
+                const filtrarProductos = respuesta.filter((item) => item.categoria === categoryid);
                 setProductos(filtrarProductos);
             } else {
                 setProductos(respuesta);
@@ -27,7 +28,12 @@ function ItemListContainer() {
         });
     }, [categoryid]);
 
-    return <ItemList productos={productos} />
+    return (
+        <div className="item-list-container">
+            <h1 className="itemListTitle">TECNOLOGIA GAMER</h1>
+            <ItemList productos={productos} />
+        </div>
+    );
 }
 
 export default ItemListContainer;

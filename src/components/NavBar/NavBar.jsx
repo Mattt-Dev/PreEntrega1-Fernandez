@@ -13,9 +13,9 @@ function NavBar() {
                         <h1 className="brand">G-Byte</h1>
                     </div>
                 </NavLink>
-                <li className=''><NavLink to="/categoria/Motherboards">Motherboards</NavLink></li>
-                <li className=''><NavLink to="/categoria/Procesadores">Procesadores</NavLink></li>
-                <li className=''><NavLink to="/categoria/Placas_de_Video">Placas de Video</NavLink></li>
+                <li className=''><NavLink to="/categoria/Motherboard">Motherboards</NavLink></li>
+                <li className=''><NavLink to="/categoria/Procesador">Procesadores</NavLink></li>
+                <li className=''><NavLink to="/categoria/Placa_de_Video">Placas de Video</NavLink></li>
                 <CartWidget />
             </ul>
             <hr />

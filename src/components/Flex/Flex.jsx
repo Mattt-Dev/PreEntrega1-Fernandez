@@ -1,7 +1,7 @@
 function Flex({ children }) {
   const flexStyle = {
     display: "flex",
-    justifyContent: "space-around",
+    justifyContent: "space-evenly",
     flexWrap: "wrap",
   };
 

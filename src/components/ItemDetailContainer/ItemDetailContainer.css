@@ -1,0 +1,21 @@
+.producto-detail_main{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 60px auto;
+    border-radius: 4px;
+    box-shadow: 0px 0px 4px;
+    width: 85%;
+}
+
+.producto-detail_img{
+    object-fit: cover;
+}
+
+.producto-detail_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px 8px;
+    max-width: 512px;
+}
